@@ -26,6 +26,9 @@ query = 'SELECT FROM Listing WHERE latitude BETWEEN {} AND {} AND longitude BETW
 records = client.command(query.format(lat1, lat2, lng1, lng2))
 
 numListings = len(records)
+maxPrice = 0
+minPrice = 999999999999
+sumPrices = 0
 
 print 'received ' + str(numListings) + ' records'
 
@@ -38,12 +41,17 @@ print 'received ' + str(numListings) + ' records'
 
 for record in records:
 	print record.price
+	if record.price < minPrice:
+		minPrice=record.price
+	if record.price > maxPrice:
+		maxPrice=record.price
+	sumPrices += record.price
 
-
+averagePrice = sumPrices/numListings
 # [PRINT OUT THE RESULTING VALUES BY CONCATENATING THEM TO THESE LINES TO CHECK YOUR WORK]
 
-print 'min price: '
-print 'max price: ' 
-print 'average price: '
+print 'min price: ' + str(minPrice)
+print 'max price: ' + str(maxPrice)
+print 'average price: ' + str(averagePrice)
 
 client.db_close()

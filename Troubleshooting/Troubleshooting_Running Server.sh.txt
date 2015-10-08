@@ -1,0 +1,67 @@
+Last login: Thu Sep 24 18:58:45 on ttys000
+Skylars-MacBook-Pro:~ Skylar$ /db/orientdb-community-2.1.0/bin/server.sh 
+           .                                          
+          .`        `                                 
+          ,      `:.                                  
+         `,`    ,:`                                   
+         .,.   :,,                                    
+         .,,  ,,,                                     
+    .    .,.:::::  ````                                 :::::::::     :::::::::   
+    ,`   .::,,,,::.,,,,,,`;;                      .:    ::::::::::    :::    :::  
+    `,.  ::,,,,,,,:.,,.`  `                       .:    :::      :::  :::     ::: 
+     ,,:,:,,,,,,,,::.   `        `         ``     .:    :::      :::  :::     ::: 
+      ,,:.,,,,,,,,,: `::, ,,   ::,::`   : :,::`  ::::   :::      :::  :::    :::  
+       ,:,,,,,,,,,,::,:   ,,  :.    :   ::    :   .:    :::      :::  :::::::     
+        :,,,,,,,,,,:,::   ,,  :      :  :     :   .:    :::      :::  :::::::::   
+  `     :,,,,,,,,,,:,::,  ,, .::::::::  :     :   .:    :::      :::  :::     ::: 
+  `,...,,:,,,,,,,,,: .:,. ,, ,,         :     :   .:    :::      :::  :::     ::: 
+    .,,,,::,,,,,,,:  `: , ,,  :     `   :     :   .:    :::      :::  :::     ::: 
+      ...,::,,,,::.. `:  .,,  :,    :   :     :   .:    :::::::::::   :::     ::: 
+           ,::::,,,. `:   ,,   :::::    :     :   .:    :::::::::     ::::::::::  
+           ,,:` `,,.                                  
+          ,,,    .,`                                  
+         ,,.     `,                                          GRAPH DATABASE  
+       ``        `.                                                          
+                 ``                                         www.orientdb.org 
+                 `                                    
+
+2015-09-24 18:59:28:977 INFO  OrientDB auto-config DISKCACHE=13,880MB (heap=455MB os=16,384MB disk=17,617MB) [orientechnologies]
+2015-09-24 18:59:29:032 INFO  Loading configuration from: /db/orientdb-community-2.1.0/config/orientdb-server-config.xml... [OServerConfigurationLoaderXml]
+2015-09-24 18:59:29:128 INFO  OrientDB Server v2.1.0 (build UNKNOWN@r; 2015-08-05 13:38:23+0000) is starting up... [OServer]
+2015-09-24 18:59:29:141 INFO  Databases directory: /db/orientdb-community-2.1.0/databases [OServer]
+2015-09-24 18:59:29:163 INFO  Listening binary connections on 0.0.0.0:2424 (protocol v.30, socket=default) [OServerNetworkListener]
+2015-09-24 18:59:29:166 INFO  Listening http connections on 0.0.0.0:2480 (protocol v.10, socket=default) [OServerNetworkListener]
+2015-09-24 18:59:29:174 INFO  Installing dynamic plugin 'orientdb-lucene-2.1.0-dist.jar'... [OServerPluginManager]
+2015-09-24 18:59:29:233 INFO  Lucene index plugin installed and active. Lucene version: LUCENE_47 [OLuceneIndexPlugin]
+2015-09-24 18:59:29:234 INFO  Installing dynamic plugin 'studio-2.1.zip'... [OServerPluginManager]
+2015-09-24 18:59:29:246 INFO  Installing GREMLIN language v.2.6.0 - graph.pool.max=50 [OGraphServerHandler]
+2015-09-24 18:59:29:246 INFO  [OVariableParser.resolveVariables] Error on resolving property: distributed [orientechnologies]
+2015-09-24 18:59:29:247 INFO  Installing Script interpreter. WARN: authenticated clients can execute any kind of code into the server by using the following allowed languages: [sql] [OServerSideScriptInterpreter]
+2015-09-24 18:59:29:247 INFO  OrientDB Server v2.1.0 (build UNKNOWN@r; 2015-08-05 13:38:23+0000) is active. [OServer]
+2015-09-24 19:01:05:106 WARNI ->0:0:0:0:0:0:0:1: Command not found: GET.sqlProfiler/soufun [ONetworkProtocolHttpDb]
+2015-09-24 19:01:05:202 SEVER Internal server error:
+com.orientechnologies.orient.core.exception.OQueryParsingException: Error on parsing query at position #8: Error on parsing command at position #0: Error on parsing query
+Query:  _studio WHERE user.name = '{{username}}' AND type = 'GraphConfig'
+-------------^
+--> com.orientechnologies.orient.core.exception.OCommandExecutionException: Class '_STUDIO' was not found in current database [ONetworkProtocolHttpDb]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
